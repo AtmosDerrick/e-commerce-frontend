@@ -12,7 +12,7 @@ const screenOptions = {
   tabBarHideOnKeyboard: true,
   headerShown: false,
   tabBarStyle: {
-    position: "absolute",
+    position: "",
     bottom: "0",
     right: "0",
     left: "0",
@@ -23,7 +23,7 @@ const screenOptions = {
 
 const BottomTabNavigation = () => {
   return (
-    <Tab.Navigator screenOptions={screenOptions}>
+    <Tab.Navigator screenOptions={screenOptions} className="w-full ">
       <Tab.Screen
         name="Home"
         component={Home}
