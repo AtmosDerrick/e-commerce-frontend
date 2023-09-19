@@ -1,6 +1,13 @@
-import { View, Text, SafeAreaView } from "react-native";
+import {
+  View,
+  Text,
+  SafeAreaView,
+  TouchableOpacity,
+  ScrollView,
+} from "react-native";
 import React from "react";
 import { Ionicons, Fontisto } from "@expo/vector-icons";
+import { Welcome } from "../components";
 
 const Home = () => {
   return (
@@ -15,10 +22,15 @@ const Home = () => {
             <View className="absolute bottom-4 w-4 h-4 rounded-full bg-green-600 z-40">
               <Text className="font-semibold text-center text-white ">8</Text>
             </View>
-            <Fontisto name="shopping-bag" size={24} />
+            <TouchableOpacity>
+              <Fontisto name="shopping-bag" size={24} />
+            </TouchableOpacity>
           </View>
         </View>
       </View>
+      <ScrollView>
+        <Welcome />
+      </ScrollView>
     </SafeAreaView>
   );
 };
