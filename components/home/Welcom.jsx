@@ -16,7 +16,7 @@ const Welcome = () => {
       <View>
         <View className="  rounded-md my-6 bg-blue-200">
           <TouchableOpacity>
-            <View className="px-4 w-full flex-row gap-4">
+            <View className="px-2 w-[100%] flex-row justify-between gap-4">
               <Feather
                 name="search"
                 size={24}
@@ -31,7 +31,7 @@ const Welcome = () => {
                   className="font-normal  w-full h-8"
                 />
               </View>
-              <TouchableOpacity className="w-12 bg-green-800 rounded-md items-center ">
+              <TouchableOpacity className="w-8 bg-green-800 rounded-md items-center ">
                 <Ionicons name="camera-outline" size={24} color="white" />
               </TouchableOpacity>
             </View>
