@@ -1,11 +1,25 @@
-import { View, Text } from "react-native";
+import { View, Text, SafeAreaView } from "react-native";
 import React from "react";
+import { Ionicons, Fontisto } from "@expo/vector-icons";
 
 const Home = () => {
   return (
-    <View className="bg-red-500 h-full">
-      <Text>Home</Text>
-    </View>
+    <SafeAreaView className="h-full">
+      <View>
+        <View className="w-full flex-row justify-between px-4">
+          <Ionicons name="location-outline" size={24} />
+          <Text className="font-semibold text-base text-gray-500">
+            Accra Ghana
+          </Text>
+          <View className="flex justify-end items-center">
+            <View className="absolute bottom-4 w-4 h-4 rounded-full bg-green-600 z-40">
+              <Text className="font-semibold text-center text-white ">8</Text>
+            </View>
+            <Fontisto name="shopping-bag" size={24} />
+          </View>
+        </View>
+      </View>
+    </SafeAreaView>
   );
 };
 
